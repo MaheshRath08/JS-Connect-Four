@@ -83,16 +83,16 @@ function checkGame(){
         let box3=winConditions[i][2]
         let box4=winConditions[i][3]
 
-        if(box1.classList.contains("p1") &&
-        box2.classList.contains("p1") &&
-        box3.classList.contains("p1") &&
-        box4.classList.contains("p1")){
+        if(boxes[box1].classList.contains("p1") &&
+        boxes[box2].classList.contains("p1") &&
+        boxes[box3].classList.contains("p1") &&
+        boxes[box4].classList.contains("p1")){
             statusEl.textContent = "Player 1 won"
         }
-        if(box1.classList.contains("p2") &&
-        box2.classList.contains("p2") &&
-        box3.classList.contains("p2") &&
-        box4.classList.contains("p2")){
+        if(boxes[box1].classList.contains("p2") &&
+        boxes[box2].classList.contains("p2") &&
+        boxes[box3].classList.contains("p2") &&
+        boxes[box4].classList.contains("p2")){
             statusEl.textContent = "Player 2 won"
         }
     }
