@@ -9,11 +9,13 @@
     transform: translate(-50%,-50%);
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    border: 1px solid black;
     border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
 }
 .container div{
     border: 1px solid #555;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -25,4 +27,7 @@ h2{
 }
 .pre{
     visibility: hidden;
+}
+#turn{
+    font-size: 2rem;
 }
