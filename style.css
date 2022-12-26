@@ -31,3 +31,16 @@ h2{
 #turn{
     font-size: 2rem;
 }
+#display{
+    display:none;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding: 10rem;
+    text-align: center;
+    background-color: lavenderblush;
+    color: #555;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px black;
+}

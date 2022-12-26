@@ -1,9 +1,10 @@
 let boxes = document.querySelectorAll(".container div")
 let turn = document.getElementById("turn")
 let statusEl = document.getElementById("status")
+let displayEl = document.getElementById("display")
 
 let player = 1
-
+let message = ""
 let winConditions = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
@@ -87,13 +88,15 @@ function checkGame(){
         boxes[box2].classList.contains("p1") &&
         boxes[box3].classList.contains("p1") &&
         boxes[box4].classList.contains("p1")){
-            statusEl.textContent = "Player 1 won"
+            message = "Player 1 won"
+            displayResult(message)
         }
         if(boxes[box1].classList.contains("p2") &&
         boxes[box2].classList.contains("p2") &&
         boxes[box3].classList.contains("p2") &&
         boxes[box4].classList.contains("p2")){
-            statusEl.textContent = "Player 2 won"
+            message = "Player 2 won"
+            displayResult(message)
         }
     }
 }
@@ -117,4 +120,8 @@ for(let i = 0; i<boxes.length; i++){
         }
         checkGame()
     }
+}
+ function displayResult(e){
+    statusEl.textContent = e
+    displayEl.style.display = "block"
 }
