@@ -2,6 +2,7 @@ let boxes = document.querySelectorAll(".container div")
 let turn = document.getElementById("turn")
 let statusEl = document.getElementById("status")
 let displayEl = document.getElementById("display")
+let replayBtn = document.getElementById("replay")
 
 let player = 1
 let message = ""
@@ -124,4 +125,8 @@ for(let i = 0; i<boxes.length; i++){
  function displayResult(e){
     statusEl.textContent = e
     displayEl.style.display = "block"
+
+    replayBtn.addEventListener("click", ()=>{
+        location.reload()
+    })
 }
