@@ -57,3 +57,5 @@ h2{
     margin-top: 1rem;
     cursor: pointer;
 }
+#replay:hover{transform: scale(1.1);}
+#replay:active{transform: scale(0.92);}
