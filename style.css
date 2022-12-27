@@ -25,6 +25,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
+.container div:hover{background-color: #d1d1d1;box-shadow: 0 0 5px 1px yellow;}
 .p1{background-color: blue;}
 .p2{background-color: red;}
 h2{
