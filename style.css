@@ -23,6 +23,7 @@ body{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 .p1{background-color: blue;}
 .p2{background-color: red;}
