@@ -70,7 +70,11 @@ h2{
 #replay:active{transform: scale(0.92);}
 .notif{
     position: fixed;
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%);
+    right: 1rem;
+    bottom: 1rem;
+    background-color: red;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
 }
