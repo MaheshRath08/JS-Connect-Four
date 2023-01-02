@@ -140,6 +140,6 @@ function checkBoxes(e){
         notif.innerHTML = `From the bottom, following the laws of gravity`
         setTimeout(()=>{
             notif.remove()
-        },1000)
+        },2000)
     }
 }
