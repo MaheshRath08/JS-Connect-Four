@@ -134,6 +134,12 @@ for(let i = 0; i<boxes.length; i++){
 
 function checkBoxes(e){
     if(!e.classList.contains("equiped")){
-        document.body.style.backgroundColor = "red"
+        let notif = document.createElement("div")
+        document.body.appendChild(notif)
+        notif.classList.add("notif")
+        notif.innerHTML = `From the bottom, following the laws of gravity`
+        setTimeout(()=>{
+            notif.remove()
+        },1000)
     }
 }

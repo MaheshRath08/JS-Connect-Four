@@ -68,3 +68,9 @@ h2{
 }
 #replay:hover{transform: scale(1.1);}
 #replay:active{transform: scale(0.92);}
+.notif{
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+}
