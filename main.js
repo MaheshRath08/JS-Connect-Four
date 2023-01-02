@@ -120,6 +120,7 @@ for(let i = 0; i<boxes.length; i++){
             }   
         }
         checkGame()
+        checkBoxes(boxes[i])
     }
 }
  function displayResult(e){
@@ -129,4 +130,10 @@ for(let i = 0; i<boxes.length; i++){
     replayBtn.addEventListener("click", ()=>{
         location.reload()
     })
+}
+
+function checkBoxes(e){
+    if(!e.classList.contains("equiped")){
+        document.body.style.backgroundColor = "red"
+    }
 }
